@@ -7,6 +7,7 @@
     --darkgrey: #707070;
     --semigrey: #95989A;
     --lightgrey: #A5A5A5;
+    box-sizing: border-box;
 }
 
 a {
@@ -94,11 +95,11 @@ a {
     border-radius: 50px;
     border: none;
     background-color: var(--blue);
-    padding: 15px;
+    padding: 15px 100px;
 }
 
 .button__header {
-    width: 440px;
+    max-width: 440px;
 }
 
 
@@ -107,12 +108,11 @@ a {
 .section-title {
     font-family: var(--primary-font);
     font-size: 36px;
-    text-align: center;
-    margin-top: 100px;
 }
 
 .title-1 {
-    margin-bottom: 100px;
+    text-align: center;
+    margin: 100px 0;
 }
 
 .section-1 .container {
@@ -161,5 +161,113 @@ a {
     height: 50px;
     border-radius: 50%;
     background-color: #060606;
-    z-index: 2;
+    z-index: -2;
+}
+
+
+/* ---- SECTION 2 ----- */
+
+.section-2 {
+    background-color: #F7F7F7;
+    padding-top: 100px;
+}
+
+.section-2 .container {
+    max-width: 1000px;
+}
+
+.article {
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px rgb(236, 230, 230);
+    margin-bottom: 40px;
+}
+
+.article p {
+    font-family: var(--secondary-font);
+    padding: 30px 0;
+}
+
+.article-1,
+.article-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.article-1 {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.article-2 {
+    justify-content: space-between;
+}
+
+.article-pic-1 {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.article-pic-2 {
+    max-width: 370px;
+    max-height: 270px;
+}
+
+.article-pic-2::before {
+    content: "";
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #060606;
+    z-index: -2;
+    position: relative;
+}
+
+.article-content {
+    width: 40%;
+    padding: 60px 20px;
+}
+
+.last-line {
+    display: flex;
+}
+
+.last-line .article-3 {
+    width: 60%;
+}
+
+.article-4 {
+    flex-shrink: 1;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.article-4 img {
+    height: 170px;
+    width: 300px;
+    padding: 30px;
+}
+
+.article .hr {
+    height: 4px;
+    max-width: 300px;
+    border: none;
+}
+
+.article-1 .hr {
+    background-color: var(--red);
+}
+
+.article-2 .hr {
+    background-color: var(--blue);
+}
+
+.article-3 .hr {
+    background-color: var(--green);
 }
