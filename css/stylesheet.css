@@ -155,14 +155,41 @@ a {
     margin-left: 50px;
 }
 
-.fun-fact img::before {
-    content: "";
-    display: inline-block;
+.circle {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: #060606;
-    z-index: -2;
+    border-radius: 35px;
+    background-color: var(--red);
+    z-index: -1;
+    position: relative;
+    left: 40px;
+}
+
+.circle-2 {
+    background-color: var(--blue);
+}
+
+.circle-3 {
+    background-color: var(--green);
+}
+
+.circle-1::before {
+    content: url(/assets/Person.svg);
+    position: relative;
+    left: 25px;
+}
+
+.circle-2::before {
+    content: url(/assets/Eye.svg);
+    position: relative;
+    left: 15px;
+    top: 10px;
+}
+
+.circle-3::before {
+    content: url(/assets/Catalog.svg);
+    position: relative;
+    left: 25px;
 }
 
 
@@ -216,17 +243,6 @@ a {
     margin-top: 20px;
     max-width: 370px;
     max-height: 270px;
-}
-
-.article-pic-2::before {
-    content: "";
-    display: inline-block;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: #060606;
-    z-index: -2;
-    position: relative;
 }
 
 .article-content {
