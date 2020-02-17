@@ -64,18 +64,20 @@
     <section class="section-2">
 
       <article class="article article-1 container">
-        <img src="assets/Macbook.png" alt="Laptop" class="article-pic-1">
-        <div class="article-content">
+        <div class="article-content-1">
           <h2 class="section-title title-2">Be always first</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis omnis, earum ab esse, dolorem ea quos eius dolor deserunt nam non veritatis quas inventore corporis eaque minus totam incidunt sequi!
           </p>
           <div class="hr"></div>
         </div>
+        <img src="assets/Macbook.png" alt="Laptop" class="article-pic-1">
+        <div class="back-shape back-shape-1"></div>
       </article>
 
       <article class="article article-2 container">
+        <div class="back-shape back-shape-2"></div>
         <img src="assets/iPhone.png" alt="Phone" class="article-pic-2">
-        <div class="article-content">
+        <div class="article-content article-content-2">
           <h2 class="section-title title-3">Your shop is where you are!</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis omnis, earum ab esse, dolorem ea quos eius dolor deserunt nam non veritatis quas inventore corporis eaque minus totam incidunt sequi!
           </p>
@@ -84,7 +86,7 @@
       </article>
 
       <div class="last-line container">
-        <article class="article article-3 article-content container">
+        <article class="article article-3 article-content-3 container">
           <h2 class="section-title title-4">Increase recognision of your brand</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis omnis, earum ab esse, dolorem ea quos eius dolor deserunt nam non veritatis quas inventore corporis eaque minus totam incidunt sequi!
           </p>
@@ -168,6 +170,70 @@
         </div>
         <button class="button button-send">Send</button>
       </form>
+    </section>
+
+    <section class="section-5">
+      <h2 class="section-title title-7">Calculate how much you'll pay</h2>
+
+      <div class="form-container">
+        <form class="contact-form-2">
+          <input type="number" id="quantity" class="form-input form-input-2" placeholder="Products quantity">
+          <input type="number" id="orders" class="form-input form-input-2" placeholder="Estimated orders in month">
+          <select name="package" id="package" class="form-input form-input-2">
+            <option value="" disabled selected hidden>Choose package</option>
+            <option value="basic">Basic</option>
+            <option value="professional">Professional</option>
+            <option value="Premium">Premium</option>
+          </select>
+          <input type="checkbox" id="checkbox" class="checkbox-box">
+          <!-- <label for="checkbox" class="checkbox-label"></label> -->
+          <p>
+            Accounting
+          </p>
+          <br>
+          <input type="checkbox" id="checkbox" class="checkbox-box">
+          <!-- <label for="checkbox" class="checkbox-label"></label> -->
+          <p>
+            Rental of a payment terminal
+          </p>
+        </form>
+        <div class="calculator">
+          <table>
+            <tbody>
+              <tr>
+                <td>Products</td>
+                <td class="calculate"></td>
+                <td class="sum"><strong>$</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Orders</td>
+                <td class="calculate"></td>
+                <td class="sum"><strong>$</strong></td>
+              </tr>
+              <tr>
+                <td>Package</td>
+                <td class="calculate"></td>
+                <td class="sum"><strong>$</strong></td>
+              </tr>
+              <tr>
+                <td>Accounting</td>
+                <td class="calculate"></td>
+                <td class="sum"><strong>$</strong></td>
+              </tr>
+              <tr>
+                <td>Terminal</td>
+                <td class="calculate"></td>
+                <td class="sum"><strong>$</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="total">
+            <span>Total</span>
+            <span>$</span>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
